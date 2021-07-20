@@ -3,7 +3,7 @@ from django.db import models
 
 class Event(models.Model):
     title = models.CharField(max_length=200, verbose_name='Название', default='')
-    description = models.TextField(verbose_name='Название', default='')
+    description = models.TextField(verbose_name='Описание', default='')
     date_start = models.DateTimeField(verbose_name='Дата начала')
     participants_number = models.PositiveSmallIntegerField(verbose_name='Количество участников')
     is_private = models.BooleanField(verbose_name='Частное', default=False)
